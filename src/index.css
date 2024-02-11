@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Protest+Riot&display=swap");
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3ba9d412;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  width: 100vw;
+  overflow-x: hidden;
+}
+/* ################## Navbar #################  */
+.nav-container {
+  background-color: white;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.navbar {
+  opacity: 1;
+  height: 100px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-ul {
+  display: flex;
+}
+.menu-ul li {
+  font-weight: 500;
+  list-style: none;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.menu-ul a {
+  transition: all 0.3s ease;
+}
+.menu-ul a:hover {
+  color: #20799c;
+}
+/* ################# Header ##################  */
+header {
+  background-color: #3ba9d4;
+}
+.header {
+  height: 120vh;
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img {
+  width: 300px;
+  margin-top: 2rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 8rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+nav h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 5rem;
+  color: #3ba9d4;
+}
+.header h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+header a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  width: fit-content;
+  margin: 2rem auto;
+  border-radius: 20px;
+  transform: translateY(-15px);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+header a:hover {
+  color: #3ba9d4;
+  background-color: white;
+}
+header a:active {
+  scale: 80%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+/* ########### Main Content ########### */
+
+.bg-video video {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bg-video {
+  transform: translateY(-20px);
+  margin-top: 5rem;
+}
+button {
+  width: 250px;
+  font-size: 1.8rem;
+  background-color: #3ba9d4;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 4rem;
+}
+button:hover {
+  background-color: #20799c;
+}
+
+/* ############# bg remover #############  */
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 600;
+  margin: 2rem auto;
+}
+.form-content {
+  margin: 0 auto;
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.108);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 5px 50px -10px rgba(0, 0, 0, 0.129);
+}
+.form input {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.default-image {
+  /* overflow: hidden; */
+  object-fit: cover;
+  object-position: center;
+  width: fit-content;
+  border: 2px solid rgba(0, 0, 0, 0.108);
+  margin: 5rem auto;
+  padding: 1rem;
+}
+.default-image img {
+  max-width: 600px;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+.main-content h5 {
+  padding-bottom: 2rem;
+}
+
+/* ################## tools section ################  */
+.tools-section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools {
+  width: 60%;
+}
+
+/* ############ footer #############  */
+.footer-container {
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  height: 90px;
+  width: 99vw;
+  background-color: #20799c;
+}
+.footer {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+footer a {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.676);
+  text-decoration: underline;
+}
+
+/* ################# pricing ############### */
+.pricing-container {
+  height: 84.5vh;
+}
+.pricing {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pricing h3 {
+  color: #3ba9d4bb;
+  margin-bottom: 2rem;
+}
+
+/* ######### about #########  */
+.about-img {
+  padding-top: 15rem;
+  text-align: center;
+}
+.about-img img {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 200px;
+}
+.about {
+  text-align: center;
+  padding-top: 4rem;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+.about span {
+  font-weight: 600;
+}
+.about a {
+  font-weight: 600;
+  color: #20799c;
+}
+.hamburger-lines .line {
+  background-color: rgba(0, 0, 0, 0.52);
+  height: 4px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.hamburger-lines {
+  height: 32px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu h3 {
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 5rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+.mobile-menu {
+  padding: 5rem;
+}
+.mobile-menu li {
+  letter-spacing: 0.3rem;
+  list-style: none;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  margin-bottom: 2.5rem;
+  /* font-weight: 600; */
+}
+/* ########## Media Queries ############  */
+@media (max-width: 500px) {
+  .tools-section {
+    background-color: #3ba9d412;
+  }
+  .menu {
+    display: none;
+  }
+  nav h1 {
+    font-size: 4rem;
+  }
+  .navbar {
+    height: 70px;
+    width: 90%;
+  }
+  header h1,
+  .tools-section h1 {
+    font-size: 4.5rem;
+  }
+  .tools-section {
+    height: 70vh;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .form-content {
+    width: 80vw;
+  }
+  .form-content input {
+    margin-top: 2rem;
+  }
+  .default-image img {
+    max-width: 70vw;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about {
+    width: 80%;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+  }
+  .about-container {
+    height: fit-content;
+  }
+  .pricing {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .pricing h1 {
+    font-size: 5rem;
+  }
+  .bg-video video {
+    width: 90vw;
+  }
+  header {
+    background-color: #3ba9d4;
+  }
+  .header {
+    height: min-content;
+    width: 90vw;
+    margin: auto;
+  }
+}
+@media (min-width: 851px) and (max-width: 950px) {
+  .navbar {
+    width: 90%;
+  }
+}
+@media (min-width: 501px) and (max-width: 850px) {
+  .navbar {
+    width: 95%;
+  }
+  nav h1 {
+    font-size: 3rem;
+  }
+}
